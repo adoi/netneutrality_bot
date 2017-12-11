@@ -1,4 +1,5 @@
-## Go and follow the bot here -> [Net Neutrality bot](https://twitter.com/savethenetbot)
+## Go and follow the bot here -> <a href="https://twitter.com/savethenetbot" target="_blank">Net Neutrality Bot!</a>
+
 
 ___
 
