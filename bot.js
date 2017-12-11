@@ -5,17 +5,17 @@ var config = require('./config');
 
 var T = new Twit(config);
 
-// var firstTweet = {
-//     status: '#NetNeutrality from the bot'
-// }
+var firstTweet = {
+    status: '#NetNeutrality from the bot'
+}
 
-// T.post('statuses/update', firstTweet, function(err, data, response){
-//     if(err){
-//         console.log('Error Ocurred');
-//     }else{
-//         console.log('Status posted successfully.');
-//     }
-// });
+T.post('statuses/update', firstTweet, function(err, data, response){
+    if(err){
+        console.log('Error Ocurred');
+    }else{
+        console.log('Status posted successfully.');
+    }
+});
 
 // The 'favorite' feature
 var favoriteTweet = function(){
