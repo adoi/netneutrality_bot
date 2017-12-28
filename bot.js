@@ -1,11 +1,11 @@
 console.log('Initial start');
 
-var Twit = require('twit');
-var config = require('./config');
+const Twit = require('twit');
+const config = require('./config');
 
-var T = new Twit(config);
+const T = new Twit(config);
 
-var firstTweet = {
+const firstTweet = {
     status: '#NetNeutrality from the bot'
 }
 
@@ -18,16 +18,16 @@ T.post('statuses/update', firstTweet, function(err, data, response){
 });
 
 // The 'favorite' feature
-var favoriteTweet = function(){
-    var params = {
+const favoriteTweet = function(){
+    const params = {
         q: '#NetNeutrality',
         result_type: 'recent',
         lang: 'en'
     }
 
     T.get('search/tweets', params, function(err, data){
-        var foundTweet = data.statuses;
-        var randomTweet = randomTw(foundTweet);
+        let foundTweet = data.statuses;
+        let randomTweet = randomTw(foundTweet);
 
         if(typeof randomTweet != 'undefined'){
             T.post('favorites/create', {id: randomTweet.id_str}, function(err, response){
@@ -42,7 +42,7 @@ var favoriteTweet = function(){
 }
 
 function randomTw(arr){
-    var index = Math.floor(Math.random()*arr.length);
+    let index = Math.floor(Math.random()*arr.length);
     return arr[index];
 }
 
@@ -52,13 +52,13 @@ setInterval(favoriteTweet, 10000*6*10);
 
 
 //The 'Reply' feature
-var stream = T.stream('user');
+const stream = T.stream('user');
 
 stream.on('follow', function(eventMsg){
     console.log('Followed! ...');
 
-    var name = eventMsg.source.name;
-    var screenName = eventMsg.source.screen_name;
+    let name = eventMsg.source.name;
+    let screenName = eventMsg.source.screen_name;
 
     tweetThis('@'+screenName+' Hi '+screenName+', thanks for following me. The internet needs us! We are fighting for Net Neutrality.\n' + 
     'Go to https://www.battleforthenet.com to learn more.\n\n' +
@@ -66,7 +66,7 @@ stream.on('follow', function(eventMsg){
 });
 
 function tweetThis(text){
-    var tweet = {
+    const tweet = {
         status: text
     }
 
