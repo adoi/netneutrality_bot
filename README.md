@@ -4,15 +4,15 @@
 ___
 
 > ## Posts
-![image](https://user-images.githubusercontent.com/23533750/33841323-b50650e4-de97-11e7-88b7-86743e60e01c.png)
+![postss](https://user-images.githubusercontent.com/23533750/38893128-b7dcec96-4289-11e8-8730-e649e5811ef4.png)
 
 ___
 
 > ## Replies
-![image](https://user-images.githubusercontent.com/23533750/33841277-954e8be0-de97-11e7-9e23-4751b28cfecd.png)
+![replies](https://user-images.githubusercontent.com/23533750/38893129-b805b496-4289-11e8-821e-29513636d515.png)
 
 ___
 
 > ## Likes
-![image](https://user-images.githubusercontent.com/23533750/33841158-39eb0a8a-de97-11e7-9c4c-e15c38e1f2c1.png)
+![likes](https://user-images.githubusercontent.com/23533750/38893127-b7b5f726-4289-11e8-9c12-253acbc8f5bd.png)
 
